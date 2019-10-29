@@ -41,6 +41,20 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
                 player.seekToMillis(skipToSecs * 1000);
             }
         });
+
+        Button entrybutton = findViewById(R.id.entrybutton);
+        entrybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEntryActivity();
+            }
+
+        });
+    }
+
+    private void openEntryActivity () {
+        Intent intent = new Intent(MainActivity.this, EntryActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -51,7 +65,8 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
         player.setPlaybackEventListener(playbackEventListener);
 
         if (!wasRestored) {
-            player.cueVideo("sLW3A3bRE0c"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
+            //player.cueVideo("sLW3A3bRE0c"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
+            player.cuePlaylist("PLXK8dBnM-3gKWVlz5OIBVzBkYBu8To5qr");
         }
     }
 
@@ -118,6 +133,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
         @Override
         public void onLoading() {
             // Called when the player is loading a video
+            showMessage("Loading");
             // At this point, it's not ready to accept commands affecting playback such as play() or pause()
         }
 
