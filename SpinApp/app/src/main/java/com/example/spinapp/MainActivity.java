@@ -13,6 +13,8 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
+import java.util.Random;
+
 public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
     private static final int RECOVERY_REQUEST = 1;
@@ -66,7 +68,9 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 
         if (!wasRestored) {
             //player.cueVideo("sLW3A3bRE0c"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
-            player.cuePlaylist("PLXK8dBnM-3gKWVlz5OIBVzBkYBu8To5qr");
+
+            int index = (int) Math.floor(Math.random()*10+1);
+            player.cuePlaylist("PLWBzzRSLzSCY7lwtT_033KIdGmID3wpOU", index, 10);
         }
     }
 
