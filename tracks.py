@@ -23,4 +23,7 @@ energy_list = []
 for key in list(response2.json().values())[0]:
     energy_list.append(key['energy'])
     energy_dict[ids_dict[key['id']]] = key['energy'] 
-print(energy_dict)
+for key in energy_dict:
+    if energy_dict[key] >= 0.89:
+        print(key, ':', energy_dict[key])
+
