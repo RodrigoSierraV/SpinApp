@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vintage_bike"
+    tools:context=".SelectActivity">
+
+    <Button
+        android:id="@+id/high_cadence"
+        android:layout_width="276dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_select"
+        android:contentDescription="@string/start_button"
+        android:text="@string/high_cadence"
+        android:textColor="#00574B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
+
+    <Button
+        android:id="@+id/medium_cadence"
+        android:layout_width="276dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_select"
+        android:contentDescription="@string/start_button"
+        android:text="@string/medium_cadence"
+        android:textColor="#00574B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <Button
+        android:id="@+id/low_cadence"
+        android:layout_width="276dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_select"
+        android:contentDescription="@string/start_button"
+        android:text="@string/low_cadence"
+        android:textColor="#00574B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="269dp"
+        android:layout_height="116dp"
+        android:text="@string/select_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

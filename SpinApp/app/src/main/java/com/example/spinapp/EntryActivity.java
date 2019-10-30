@@ -24,7 +24,7 @@ public class EntryActivity extends AppCompatActivity {
     }
 
     private void moveToMain () {
-        Intent intent = new Intent(EntryActivity.this, MainActivity.class);
+        Intent intent = new Intent(EntryActivity.this, SelectActivity.class);
         startActivity(intent);
     }
 }

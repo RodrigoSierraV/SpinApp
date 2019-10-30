@@ -21,9 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".SelectActivity" />
+        <activity android:name=".MainActivityHigh" />
+        <activity android:name=".MainActivityMedium" />
+        <activity android:name=".MainActivityLow" />
     </application>
 
 </manifest>

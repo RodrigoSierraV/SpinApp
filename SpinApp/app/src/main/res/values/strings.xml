@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">SpinApp</string>
     <string name="player_error">Error initializing YouTube player: %s</string>
-    <string name="seek_to">Jump To</string>
-    <string name="seek_to_hint">Seconds</string>
     <string name="start_button">Start Button</string>
-    <string name="Entry_button">To entry</string>
     <string name="start_training">Start Training</string>
+    <string name="title_activity_select">SelectActivity</string>
+    <string name="select_content">Select Your Cadence Training Level</string>
+    <string name="low_cadence">40 - 60</string>
+    <string name="medium_cadence">60 - 80</string>
+    <string name="high_cadence">80 - 100</string>
 </resources>

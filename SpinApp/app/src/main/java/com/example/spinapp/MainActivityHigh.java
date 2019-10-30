@@ -2,9 +2,6 @@ package com.example.spinapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -13,9 +10,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-import java.util.Random;
-
-public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
+public class MainActivityHigh extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
     private static final int RECOVERY_REQUEST = 1;
     private YouTubePlayerView youTubeView;
@@ -26,37 +21,13 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_mainhigh);
 
-        youTubeView = findViewById(R.id.youtube_view);
+        youTubeView = findViewById(R.id.youtube_view_high);
         youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
         playerStateChangeListener = new MyPlayerStateChangeListener();
         playbackEventListener = new MyPlaybackEventListener();
 
-        final EditText seekToText = findViewById(R.id.seek_to_text);
-        Button seekToButton = findViewById(R.id.seek_to_button);
-        seekToButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                int skipToSecs = Integer.valueOf(seekToText.getText().toString());
-                player.seekToMillis(skipToSecs * 1000);
-            }
-        });
-
-        Button entrybutton = findViewById(R.id.entrybutton);
-        entrybutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEntryActivity();
-            }
-
-        });
-    }
-
-    private void openEntryActivity () {
-        Intent intent = new Intent(MainActivity.this, EntryActivity.class);
-        startActivity(intent);
     }
 
     @Override
@@ -168,4 +139,3 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
         }
     }
 }
-
