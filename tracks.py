@@ -1,16 +1,26 @@
 from requests import get
+from sys import exit
 
-token = 'BQBr-Achh5o9Qx06fDk05nndefLPdusw_N_mjp3n3GKcOBqvTE8gfV38ylxGVogs4hlvpe3x9Mwe1zncgwJz6P3kxw5GX1VDCiPssuGHBO2z4KgMGja8LztrWYiX0D6rRu7nHzDELsMl5fE99sWqFjv2g4UM4lh54wpZWsYXUSrY8YO7Ilvtw6RpKw4-3b_T5UoM35AzUNvVZs1bhrsAT_9hlZNLsIMzqA'
+token = 'BQBzHPfZksx8p-7aKudGsnBS4ccmYenMlz8Yf1oLE9d1ChoVdpIYygOBn5CQoBcd9tjuY7fijyGkrX7A1CQ_at_cZC__5meTYCSiOTRLO17y5pI-eFqBYwTFL_qpfAYapERUFt1knpztp94FiIurJ0FyhXi4KiqFUYSJAp_00uQq7ObyHud_52ivB0X8vugvdJZTJvtygF4DousYcssFlFgol7AfbKA9Vw'
 
+print('Enter artist name:')
 name_artist = input()
-print(name_artist)
+
 id_artist = get("https://api.spotify.com/v1/search?q={}&type=artist".format(name_artist), headers={"Accept": "application/json", "Content-Type": "application/json", "Authorization": "Bearer {}".format(token)})
 
-artist_id = id_artist.json()['artists']['items'][0]['id']
+try:
+    artist_id = id_artist.json()['artists']['items'][0]['id']
+except:
+    print('No artist')
+    exit(0)
+
+print('Enter energy level (0 - 100):')
+energy_level = int(input())/100
 
 response = get("https://api.spotify.com/v1/artists/{}/top-tracks?country=us".format(artist_id), headers={"Accept": "application/json", "Content-Type": "application/json", "Authorization": "Bearer {}".format(token)})
 ids_list = []
 ids_dict = {}
+
 dict_values = response.json().values()
 vlst = list(dict_values)
 for key in vlst[0]:
@@ -22,8 +32,12 @@ energy_dict = {}
 energy_list = []
 for key in list(response2.json().values())[0]:
     energy_list.append(key['energy'])
-    energy_dict[ids_dict[key['id']]] = key['energy'] 
+    energy_dict[ids_dict[key['id']]] = key['energy']
+
+if energy_level > max(sorted(energy_list, reverse=True)):
+    print('There are no songs with that level')
+    exit(0)
 for key in energy_dict:
-    if energy_dict[key] >= 0.89:
+    if energy_dict[key] >= energy_level:
         print(key, ':', energy_dict[key])
 
