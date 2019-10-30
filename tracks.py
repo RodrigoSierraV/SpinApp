@@ -2,7 +2,9 @@ from requests import get
 
 token = 'BQBr-Achh5o9Qx06fDk05nndefLPdusw_N_mjp3n3GKcOBqvTE8gfV38ylxGVogs4hlvpe3x9Mwe1zncgwJz6P3kxw5GX1VDCiPssuGHBO2z4KgMGja8LztrWYiX0D6rRu7nHzDELsMl5fE99sWqFjv2g4UM4lh54wpZWsYXUSrY8YO7Ilvtw6RpKw4-3b_T5UoM35AzUNvVZs1bhrsAT_9hlZNLsIMzqA'
 
-id_artist = get("https://api.spotify.com/v1/search?q=avicii&type=artist", headers={"Accept": "application/json", "Content-Type": "application/json", "Authorization": "Bearer {}".format(token)})
+name_artist = input()
+print(name_artist)
+id_artist = get("https://api.spotify.com/v1/search?q={}&type=artist".format(name_artist), headers={"Accept": "application/json", "Content-Type": "application/json", "Authorization": "Bearer {}".format(token)})
 
 artist_id = id_artist.json()['artists']['items'][0]['id']
 
