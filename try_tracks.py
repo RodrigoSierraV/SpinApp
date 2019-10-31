@@ -1,7 +1,10 @@
 from requests import get
 from sys import exit
+import urllib.request
+import urllib.parse
+import re
 
-token = 'BQCv2EqlZoCdBvxyQ4u_KDyvg9vUeQ1Y8o0ld0TVue_ZbjEu5mWK2eBz6RTXEsKjVr80jr97Lx3OjbTwApK_0MS7z2FSeM7dIPKrTkQKHqCaCp33XGJDDR5Qpjyn3xjM011N6Ze9iU45EdRLbvslt4lBQgAaRso_Ea8HOIROXw9XzESMNmYok8QaXqUkOXE2UFqnTqg-Vrai2zrHTOCtCTRHqQquYF_pPw'
+token = 'BQD7AJP80Zv4SOt4QwIIMt__lFTKMzyQ1W2jgaVwN7rw_-fy9Xdt1AG6GlhgErqEAVeXZdrNazFyKLNkrWTgbZtr_WiOoyBlaULAMrcKXEo1Hdlt4VizdkHED1pldQ7LEAfwcKnvql0l3y92-f44vYSAjuN5jcyq8ptK05pZwaxSbWhswFYvFnVYmplbzCWWw77aCMYYAGnko0XpcQ3crpyYqJP-xz1_sQ'
 
 file = 'artists_list.txt'
 list_of_artists = []
@@ -21,7 +24,7 @@ for name in list_of_artists:
     try:
         artist_id = id_artist.json()['artists']['items'][0]['id']
     except:
-        print('No artist')
+        continue 
 
     response = get("https://api.spotify.com/v1/artists/{}/top-tracks?country=us".format(artist_id), headers={"Accept": "application/json", "Content-Type": "application/json", "Authorization": "Bearer {}".format(token)})
     ids_list = []
@@ -48,5 +51,9 @@ for name in list_of_artists:
             continue
         for key in energy_dict:
             if energy_dict[key] >= energy_level:
-                print("{};{};{}".format(name, key, energy_dict[key]))
+                query_string = urllib.parse.urlencode({"search_query" : "{} {}".format(name, key)})
+                html_content = urllib.request.urlopen("http://www.youtube.com/results?" + query_string)
+                search_results = re.findall(r'href=\"\/watch\?v=(.{11})', html_content.read().decode())
+                print("{};{};{};{}".format(name, key, energy_dict[key], search_results[0]))
+
 
