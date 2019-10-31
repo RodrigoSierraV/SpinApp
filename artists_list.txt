@@ -1,11 +1,5 @@
-10cc
-2Pac
-50 Cent
 A Thousand Horses
 ABBA
-ABC
-Aerosmith
-Agnetha Fältskog
 Alan Jackson
 Albert King
 Alice Cooper
@@ -48,7 +42,7 @@ Billie Holiday
 Billy Currington
 Billy Fury
 Billy Preston
-Björk
+Bjork
 Black Eyed Peas
 Black Sabbath
 Black Uhuru
@@ -106,11 +100,11 @@ Crowded House
 Culture Club
 The Cure
 Cutting Crew
-D’Angelo
+DAngelo
 DMX
 The Damned
 Daniel Hope
-Danny Wilson & Gary Clark
+Danny Wilson Gary Clark
 David Bowie
 Dean Martin
 Debarge
@@ -122,7 +116,7 @@ Derek And The Dominos
 Desmond Dekker
 Diana Krall
 Diana Ross
-Diana Ross & The Supremes
+Diana Ross The Supremes
 Dierks Bentley
 Dinah Washington
 Dio
@@ -147,10 +141,10 @@ Elliott Smith
 Elton John
 Elvis Costello
 Elvis Presley
-Emeli Sandé
+Emeli Sande
 Eminem
 Enigma
-Eric B. & Rakim
+Eric B. Rakim
 Eric Church
 Eric Clapton
 Etta James
@@ -161,7 +155,7 @@ Fairport Convention
 Fats Domino
 Faust
 Fergie
-Florence + The Machine
+Florence The Machine
 The Flying Burrito Brothers
 Four Tops
 Foxy Brown
@@ -193,7 +187,7 @@ Graham Parker
 Grand Funk Railroad
 Gregory Isaacs
 Gregory Porter
-Guns N’ Roses
+Guns Roses
 Gwen Stefani
 Hank Williams
 Heart
@@ -203,7 +197,7 @@ Herbie Hancock
 Hoobastank
 Howlin Wolf
 Hoyt Axton
-Huey Lewis & The News
+Huey Lewis The News
 The Human League
 Humble Pie
 INXS
@@ -227,9 +221,9 @@ James Blake
 James Brown
 James Morrison
 James Taylor
-Jane’s Addiction
+Janes Addiction
 Janet Jackson
-Japan & David Sylvian
+Japan David Sylvian
 Jay-Z
 Jeru the Damaja
 Jessie J
@@ -244,7 +238,7 @@ Joan Baez
 Joe Cocker
 Joe Jackson
 Joe Sample
-Joe Walsh / The James Gang
+Joe Walsh The James Gang
 John Coltrane
 John Fogerty
 John Lee Hooker
@@ -258,7 +252,7 @@ Johnny Gill
 Joni Mitchell
 Jonny Lang
 Joss Stone
-Jr. Walker & The All Stars
+Jr. Walker The All Stars
 Julie London
 Jurassic 5
 Justin Bieber
@@ -288,13 +282,13 @@ Lady GaGa
 Lana Del Rey
 Laura Marling
 Led Zeppelin
-Lee ‘Scratch’ Perry
+Lee Scratch Perry
 Lenny Kravitz
 Leon Russell
 Lester Young
 Level 42
 The Libertines
-Lightnin’ Hopkins
+Lightnin Hopkins
 Lil Wayne
 Linton Kwesi Johnson
 Lionel Richie
@@ -310,15 +304,15 @@ Luke Bryan
 Lulu
 The Lumineers
 Lynyrd Skynyrd
-Maddie & Tae
+Maddie Tae
 Madonna
 Magazine
-The Mamas & The Papas
+The Mamas The Papas
 Marc Almond
 Marilyn Manson
 Mark Knopfler
 Maroon 5
-Martha Reeves & The Vandellas
+Martha Reeves The Vandellas
 The Marvelettes
 Marvin Gaye
 Mary Hopkin
@@ -336,16 +330,16 @@ Metallica
 Method Man
 Michael Jackson
 Michael Nyman
-Mike & the Mechanics
+Mike the Mechanics
 Mike Oldfield
 Miles Davis
 Minnie Riperton
 The Moody Blues
 Morrissey
-Motörhead
+Motorhead
 Muddy Waters
-Mumford & Sons
-Mötley Crüe
+Mumford Sons
+Motley 
 N.W.A
 Nanci Griffith
 Nas
@@ -383,14 +377,14 @@ Patty Griffin
 Paul McCartney and Wings
 Paul Simon
 Paul Weller
-Peaches & Herb
+Peaches Herb
 Pearl Jam
 Peggy Lee
 Pete Townshend
 Peter Frampton
 Phil Collins
 Phil Manzanera
-PiL (Public Image Ltd)
+PiL Public Image Ltd
 Pink Floyd
 Placebo
 Poco
@@ -461,14 +455,14 @@ Sham 69
 Shania Twain
 Sheryl Crow
 Simple Minds
-Siouxsie & The Banshees
+Siouxsie The Banshees
 Slayer
 Slick Rick
-Sly & Robbie
+Sly Robbie
 Small Faces
 The Smashing Pumpkins
 Smokey Robinson
-Smokey Robinson & The Miracles
+Smokey Robinson The Miracles
 Snoop Dogg
 Snow Patrol
 Soft Cell
@@ -523,7 +517,7 @@ Toby Keith
 Tom Jones
 Tom Petty
 Tom Waits
-Toots & The Maytals
+Toots The Maytals
 Tori Amos
 Traffic
 Traveling Wilburys
