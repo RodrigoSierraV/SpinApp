@@ -1,7 +1,39 @@
 ﻿# SpinApp
 
-This app plays a Spinning playlist (https://www.youtube.com/watch?v=sLW3A3bRE0c) from Youtube API and has the option to jump to any moment of the reproduction to the seconds given in the field and pushing the button. It also has Toast messages in the bottom to alert the user when is “Playing”, “Stopped” or “Paused”. 
+# The app for cycling lovers that also want to hear music at the same level of their training speed
 
 <p align="center">
-  <img width="420" height="800" src="images/SC2.jpg">
+  <img width="310" height="600" src="/Images/SC4.jpg">
 </p>
+
+# What do you have to do?
+
+
+## Push Start training
+
+## Select your Training level (Cadence)
+
+
+<p align="center">
+  <img width="310" height="600" src="/Images/SC5.jpg">
+</p>
+
+
+# Enjoy your music and videos and push your limits
+
+
+<p align="center">
+  <img width="310" height="600" src="/Images/SC7.jpg">
+</p>
+
+# What is behind?
+
+## We have more than 5000 songs rated by their energy level
+## so we can present you music according to your speed
+
+<p align="center">
+  <img width="600" height="400" src="/Images/levels.jpg">
+</p>
+
+
+
