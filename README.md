@@ -16,8 +16,9 @@
   <img width="310" height="600" src="/Images/SC5.jpg">
 </p>
 
-# Enjoy your music and push your limits
+# Enjoy your music and videos and push your limits
 
 <p align="center">
   <img width="310" height="600" src="/Images/SC6.jpg">
 </p>
+
