@@ -31,6 +31,12 @@ public class MainActivityLow extends YouTubeBaseActivity implements YouTubePlaye
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.fade_in, 0);
+    }
+
+    @Override
     public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
 
         this.player = player;
@@ -40,8 +46,8 @@ public class MainActivityLow extends YouTubeBaseActivity implements YouTubePlaye
         if (!wasRestored) {
             //player.cueVideo("sLW3A3bRE0c"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
 
-            int index = (int) Math.floor(Math.random()*10+1);
-            player.cuePlaylist("PLWBzzRSLzSCY7lwtT_033KIdGmID3wpOU", index, 10);
+            int index = (int) Math.floor(Math.random()*20+1);
+            player.cuePlaylist("PLWBzzRSLzSCY_ovj4RNk5Ax-qcc_koQVW", index, 10);
         }
     }
 

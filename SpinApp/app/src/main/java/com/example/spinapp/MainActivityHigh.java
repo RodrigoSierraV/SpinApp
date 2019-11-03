@@ -31,6 +31,12 @@ public class MainActivityHigh extends YouTubeBaseActivity implements YouTubePlay
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.fade_in, 0);
+    }
+
+    @Override
     public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
 
         this.player = player;

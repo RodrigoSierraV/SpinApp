@@ -1,11 +1,10 @@
 package com.example.spinapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class EntryActivity extends AppCompatActivity {
 
@@ -14,17 +13,24 @@ public class EntryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entry);
 
-        Button button = findViewById(R.id.startButton);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                moveToMain();
-            }
-        });
-    }
+        final Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
 
-    private void moveToMain () {
-        Intent intent = new Intent(EntryActivity.this, SelectActivity.class);
-        startActivity(intent);
+            public void run() {
+
+                runOnUiThread(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        Intent in = new Intent(getApplicationContext(), SelectActivity.class);
+                        startActivity(in);
+                        overridePendingTransition(R.anim.fade_in, 0);
+                        timer.cancel();
+                    }
+                });
+
+            }
+
+        }, 1800);
     }
 }
