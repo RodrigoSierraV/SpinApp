@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivityLow"
-    android:background="@drawable/low_level">
+    tools:context=".MainActivityLow">
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_view_low"

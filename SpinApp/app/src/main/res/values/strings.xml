@@ -4,7 +4,7 @@
     <string name="start_button">Start Button</string>
     <string name="start_training">Start Training</string>
     <string name="title_activity_select">SelectActivity</string>
-    <string name="select_content">Select Your Training Level</string>
+    <string name="select_content">Choose Your Training Level</string>
     <string name="low_cadence">40 - 60</string>
     <string name="medium_cadence">60 - 80</string>
     <string name="high_cadence">80 - 100</string>

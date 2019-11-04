@@ -122,6 +122,7 @@ public class MainActivityMedium extends YouTubeBaseActivity implements YouTubePl
         public void onLoaded(String s) {
             // Called when a video is done loading.
             // Playback methods such as play(), pause() or seekToMillis(int) may be called after this callback.
+            player.play();
         }
 
         @Override

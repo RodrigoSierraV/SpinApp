@@ -24,9 +24,11 @@
         </activity>
         <activity android:name=".SelectActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivityHigh" />
-        <activity android:name=".MainActivityMedium" />
-        <activity android:name=".MainActivityLow" />
+        <activity android:name=".MainActivityHigh"/>
+        <activity android:name=".MainActivityMedium"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".MainActivityLow"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

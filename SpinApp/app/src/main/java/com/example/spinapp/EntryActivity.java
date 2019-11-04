@@ -31,6 +31,6 @@ public class EntryActivity extends AppCompatActivity {
 
             }
 
-        }, 1800);
+        }, 2000);
     }
 }
