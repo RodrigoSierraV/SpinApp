@@ -45,4 +45,4 @@
 
 # Enjoy it
 
-[![Watch the video](https://www.youtube.com/watch?v=JpUEnXUQ0D0&feature=youtu.be)]
+[![Watch the video]](https://www.youtube.com/watch?v=JpUEnXUQ0D0&feature=youtu.be)
