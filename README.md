@@ -3,7 +3,7 @@
 # The app for cycling lovers that also want to hear music at the same level of their training speed
 
 <p align="center">
-  <img width="310" height="600" src="/Images/SC4.jpg">
+  <img width="310" height="600" src="/Images/SC9.jpg">
 </p>
 
 # What do you have to do?
@@ -15,7 +15,7 @@
 
 
 <p align="center">
-  <img width="310" height="600" src="/Images/SC5.jpg">
+  <img width="310" height="600" src="/Images/SC10.jpg">
 </p>
 
 
@@ -23,7 +23,15 @@
 
 
 <p align="center">
-  <img width="310" height="600" src="/Images/SC7.jpg">
+  <img width="310" height="600" src="/Images/SC11.jpg">
+</p>
+
+<p align="center">
+  <img width="310" height="600" src="/Images/SC12.jpg">
+</p>
+
+<p align="center">
+  <img width="310" height="600" src="/Images/SC13.jpg">
 </p>
 
 # What is behind?
@@ -35,5 +43,6 @@
   <img width="600" height="400" src="/Images/levels.jpg">
 </p>
 
+# Enjoy it
 
-
+[![Watch the video](/Images/spinapp.mp4)]
