@@ -6,6 +6,8 @@
   <img width="310" height="600" src="/Images/SC9.jpg">
 </p>
 
+![Intro image](/Images/SC9.jpg)
+
 [[https://github.com/RodrigoSierraV/SpinApp/blob/master/Images/SC9.jpg]]
 
 # What do you have to do?
