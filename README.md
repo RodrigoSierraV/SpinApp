@@ -6,7 +6,7 @@
   <img width="310" height="600" src="/Images/SC9.jpg">
 </p>
 
-[[https://github.com/RodrigoSierraV/SpinApp/blob/master/Images/SC9.jpg|alt=octocat]]
+[[https://github.com/RodrigoSierraV/SpinApp/blob/master/Images/SC9.jpg]]
 
 # What do you have to do?
 
